@@ -23,18 +23,14 @@
 
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "Python-NattO-{{timestamp}}"
+    "ami_name": "Nginx-NattO-{{timestamp}}"
   }],
 
   "provisioners": [
     {
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
-      "run_list": ["python::default"]
-    },
-    {
-      "type": "shell",
-      "inline": ["pip install -r requirements.txt"]
+      "run_list": ["nginx::default"]
     }
   ]
 }
