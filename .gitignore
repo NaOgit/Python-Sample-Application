@@ -30,3 +30,5 @@ Berksfile.lock
 Policyfile.lock.json
 
 cookbooks
+
+ubuntu-xenial-16.04-cloudimg-console.log
